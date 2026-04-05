@@ -50,10 +50,11 @@ This script uses `uv` for Python package management. Make sure you have `uv` ins
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
-or
-```
-# Fedora based
-sudo dnf install uv
+
+```bash
+uv venv
+source .venv/bin/activate
+uv start main.py
 ```
 
 ## Dataset used
