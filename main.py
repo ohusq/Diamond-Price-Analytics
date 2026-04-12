@@ -1,8 +1,12 @@
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-import os
+try:
+    import pandas as pd
+    import numpy as np
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+    import os
+except ImportError:
+    print("Required libraries not found. Install them with:\n\nsource ./.venv/bin/activate && uv run main.py\n")
+    exit(1)
 
 os.makedirs('result', exist_ok=True)
 
