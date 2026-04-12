@@ -6,6 +6,7 @@ try:
     import os
 except ImportError:
     print("Required libraries not found. Install them with:\n\nsource ./.venv/bin/activate && uv run main.py\n")
+    print("If you don't have uv installed, you can install it with:\n\npip install uv\n")
     exit(1)
 
 os.makedirs('result', exist_ok=True)
