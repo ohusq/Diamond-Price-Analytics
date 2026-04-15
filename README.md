@@ -54,7 +54,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ```bash
 uv venv
 source .venv/bin/activate
-uv start main.py
+uv run main.py
 ```
 
 ## Dataset used
